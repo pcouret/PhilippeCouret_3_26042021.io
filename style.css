@@ -1,0 +1,127 @@
+.html
+{display: block;}
+.head
+{display: none;}
+.meta
+{display: none;}
+.script
+{display: none;}
+.body
+{margin: 0;
+font-family: "roboto",sans-serif;}
+.body
+{display: block;}
+.loader_page
+{position: fixed;
+z-index: #999;
+top: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+background: #fff;
+display: flex;
+-webkit-box-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+align-items: center;
+visibility: hidden;
+transition: visibility 3s;
+}
+.loader_page--spinner
+{position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    border: 5px solid #f2f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.main
+{display: block;}
+.headerlogo {
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+.headerlogo_img {
+    width: 12rem;
+    height: 3rem;
+}
+.reservation {
+    grid-column-start: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+.reservation_local {
+    width: 100%;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    background-color: #eaeaea;
+    box-shadow: 0px 3px 3px #73737338 inset;
+}
+.reservation_local--fas {
+    margin: 0 1.5rem 0 -2rem;
+}
+.btn {
+    grid-column-start: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f6f6f6;
+    border-radius: 33%;
+    padding: 2%;
+    background-color: blueviolet;
+}
+
+.function {
+    text-align: left;
+}
+.function--title{
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+    
+}
+.function_step--number{
+    text-align: center;
+    justify-content: flex;
+    
+}
+.function_step--title{
+    text-align: center;
+}
+.fas fa-mobile_alt{
+    align-items: center;
+}
+
+.function_step--icon{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+
+}
+    
+
+
+
+
+
+}
+
+}
