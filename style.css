@@ -45,18 +45,22 @@
     color: #fff;
     font-weight: bold;
     display: inline-block;
+    margin: 30px;
 }
 
 .function {
     text-align: left;
     justify-content: flex;
     align-items: center;
-    margin:auto;
     box-shadow: 10px 5px 5px rgb(247, 243, 243);
+    margin-bottom: 20px;
+    padding: 40px;
+    
     
 }
 .function--title {
     font-weight: bolder;
+    margin-bottom: 30px;
     
 }
 .function_step--number {
@@ -65,13 +69,14 @@
     background-color: #9356dc;
     border-radius: 100%;
     color: #fff;
-    display: inline-block;
+    display: block;
     height: 25px;
-    left: ;
+    left: -15px;
     line-height: ;
-    position: ;
+    position: absolute;
     text-align: center;
     width: 25px;
+    
 
         
 }
@@ -109,7 +114,7 @@
   
 .restaurants {
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .restaurants--title {
@@ -117,6 +122,7 @@
     display: flex;
     align-items: center;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .restaurants_card {
@@ -165,8 +171,11 @@
     justify-content: flex;
     text-align: left;
     background-color:#fff;
-    width: 100%;
-    
+    width: 100%; 
+}
+
+.restaurants_heart--animation {
+    color: black;
 }
 .footerlogo {
     align-items: center;
@@ -176,15 +185,17 @@
 .footer {
     text-align: center;
     justify-content: flex;
-    background-color: black;
+    background-color:black;
     color: white;
     box-shadow: 10px 5px 5px 5px rgb(226, 215, 215);
+
 }
-.footer_link {
-    text-align: center;
-    justify-content: flex;
-    
-}
+
+        
+
+
+
+
 
 @media screen and (max-width: 576px)
 @media screen and (max-width: 768px)
