@@ -48,11 +48,11 @@
 }
 
 .function {
-    text-align: center;
+    text-align: left;
     justify-content: flex;
     align-items: center;
     margin:auto;
-    box-shadow: 10px 5px 5px rgb(226, 215, 215);
+    box-shadow: 10px 5px 5px rgb(247, 243, 243);
     
 }
 .function--title {
@@ -67,9 +67,9 @@
     color: #fff;
     display: inline-block;
     height: 25px;
-    left: -12px;
-    line-height: 1px;
-    position: absolute;
+    left: ;
+    line-height: ;
+    position: ;
     text-align: center;
     width: 25px;
 
@@ -93,52 +93,23 @@
 }
 
 .function_step {
-    margin: 5px;
-}
-
-.function_step1 {
+    margin: auto;
+    padding: 15px 30px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 1rem 1rem 1rem 1rem;
-    background-color:#cfaeae;
+    background-color:#f0eaea;
     border-radius: 20px;
     padding: 5px 5px;
     margin-bottom: 20px;
     position: relative;
     box-shadow: 10px 5px 5px rgb(226,215,215);
-
 }
-.function_step2 {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0 1rem 0;
-    background-color:#ebd1d1;
-    border-radius: 20px;
-    padding: 5px 5px;
-    margin-bottom: 20px;
-    position: relative;
-    box-shadow: 10px 5px 5px rgb(226, 215, 215);
-
-}
-.function_step3 {
-    display:inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0 1rem 0;
-    background-color:#e6a5a5;
-    border-radius: 20px;
-    padding: 5px 5px;
-    margin-bottom: 20px;
-    position: relative;
-    box-shadow: 10px 5px 5px rgb(226, 215, 215);
-    
-    
-}
-
+  
 .restaurants {
     position: relative;
+    margin-bottom: 5px;
 }
 
 .restaurants--title {
@@ -150,6 +121,8 @@
 
 .restaurants_card {
     position: relative;
+    margin-bottom: 20px;
+
     
 }
 .restaurants_card--img {
@@ -158,12 +131,12 @@
     border-top-right-radius: 1em;
     max-height: 200px;
     object-fit: cover;
-    margin: 5px,5px,5px,5px;
     align-items: center;
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 100%;  
+    width: 100%;
+      
 }
 
 .restaurants_card--tag {
@@ -186,23 +159,31 @@
     max-height: 200px;
     max-width: 100%;
     object-fit: cover;
-    margin: 5px,5px,10px,5px;
+    margin: 0px,5px;
     align-items: center;
     display: flex;
-    justify-content: left;
+    justify-content: flex;
     text-align: left;
-    padding: auto;
     background-color:#fff;
     width: 100%;
     
 }
+.footerlogo {
+    align-items: center;
+    justify-content: flex;
 
-.end {
-    align-self: center;
-    justify-content: center;
-    background-color: grey;
-    position: relative;
+}
+.footer {
+    text-align: center;
+    justify-content: flex;
+    background-color: black;
+    color: white;
     box-shadow: 10px 5px 5px 5px rgb(226, 215, 215);
+}
+.footer_link {
+    text-align: center;
+    justify-content: flex;
+    
 }
 
 @media screen and (max-width: 576px)
