@@ -1,0 +1,532 @@
+@keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+  header {
+    background-color:#fff;
+    color: black;
+    text-align: center;
+    height: 85px;
+    line-height: 85px;
+    margin-top: 0px;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  header .header__title {
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.3rem;
+  }
+  
+  .title {
+    text-align: center;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 4.5vw;
+  }
+  
+  .menu {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+    padding: 6%;
+    margin-right: 10%;
+    margin-left: 10%;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.2);
+  }
+  @media (max-width: 600px) {
+    .menu {
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+  }
+  .menu .menu-title-withPicture .menu-picture {
+    width: 12%;
+    height: 12%;
+  }
+  .menu .menu-title-withPicture .menu-title {
+    margin-top: 1%;
+  }
+  .menu .menu-title-withoutPicture .menu-title {
+    margin-top: 7%;
+    margin-bottom: 12%;
+  }
+  .menu .menu-box {
+    margin-top: 7%;
+  }
+  .menu .menu-box .menu-box-title {
+    display: flex;
+    align-items: center;
+  }
+  .menu .menu-box .menu-box-title .menu-box-title_left-line {
+    height: 2%;
+    width: 30%;
+    overflow: hidden;
+  }
+  .menu .menu-box .menu-box-title .menu-box-title_text {
+    margin: auto;
+  }
+  .menu .menu-box .menu-box-title .menu-box-title_right-line {
+    height: 2%;
+    width: 30%;
+    overflow: hidden;
+  }
+  .menu .menu-box .menu-box-dish li {
+    line-height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.9vw;
+    text-indent: -2.2rem;
+  }
+  @media (max-width: 600px) {
+    .menu .menu-box .menu-box-dish li {
+      text-align: center;
+      line-height: 100%;
+      flex-direction: column;
+      font-size: 1.3rem;
+    }
+  }
+  .menu .menu-box .menu-box-dish li .bold {
+    font-size: 2.1vw;
+    font-weight: bold;
+  }
+  @media (max-width: 600px) {
+    .menu .menu-box .menu-box-dish li .bold {
+      font-size: 1.3rem;
+    }
+  }
+  @media (max-width: 600px) {
+    .menu .menu-box .menu-box-dish {
+      margin-bottom: 25%;
+    }
+  }
+  .menu .menu-bottom-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1vw;
+  }
+  .menu .menu-bottom-full .menu-bottom-full-picture {
+    width: 7%;
+    height: 7%;
+  }
+  .menu .menu-bottom-full .menu-bottom-full-title {
+    margin-left: 5%;
+    font-size: 3vw;
+  }
+  @media (max-width: 600px) {
+    .menu .menu-bottom-full .menu-bottom-full-title {
+      font-size: 1.5rem;
+    }
+  }
+  .menu .menu-bottom-empty {
+    height: 10vw;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #579c87;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 47px;
+    line-height: 47px;
+  }
+  footer .footer-title {
+    text-decoration: none;
+    color: #fdcb46;
+    font-size: 1.2rem;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+  footer .footer-title:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.7s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  footer .footer-title-left {
+    margin-left: 15px;
+  }
+  footer .footer-title-right {
+    margin-right: 15px;
+  }
+  
+  .footer-cache {
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 47px;
+  }
+  
+  .grid-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+  @media (min-width: 1200px) {
+    .grid-menu {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (max-width: 600px) {
+    .grid-menu {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .grid-menu .box-menu-container {
+    overflow: hidden;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.2);
+  }
+  .grid-menu .box-menu-content {
+    width: 100%;
+    margin-bottom: -5%;
+    transition-duration: 1s;
+  }
+  .grid-menu .box-menu-content:hover {
+    background: no-repeat 0 -50%;
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  
+  .soon {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #579c87;
+    color: #fdcb46;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 1.3rem;
+  }
+  .soon #soon-dot-first {
+    animation-name: soon-dot-first;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .soon #soon-dot-second {
+    animation-name: soon-dot-second;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .soon #soon-dot-third {
+    animation-name: soon-dot-third;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes soon-dot-first {
+    20% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes soon-dot-second {
+    45% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes soon-dot-third {
+    70% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .menu-la-note-enchantee {
+    background-color: #fcdfdb;
+    color: #3d1319;
+    font-family: "Devonshire";
+  }
+  
+  .menu-title-la-note-enchantee {
+    font-size: 4vw;
+  }
+  @media (max-width: 600px) {
+    .menu-title-la-note-enchantee {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .menu-box-title-text-la-note-enchantee {
+    font-weight: normal;
+    font-size: 3vw;
+    text-decoration: none;
+    background: linear-gradient(to top, #3d1319 0%, #3d1319 0.3vw, transparent 0.31vw) no-repeat left bottom/0 100%;
+    transition: background-size 0.5s;
+  }
+  .menu-box-title-text-la-note-enchantee:hover {
+    background-size: 100% 100%;
+  }
+  @media (max-width: 600px) {
+    .menu-box-title-text-la-note-enchantee {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .menu-le-chic-a-la-francaise {
+    background-color: #fff5fe;
+    font-family: "Arapey";
+  }
+  
+  .menu-title-le-chic-a-la-francaise {
+    font-family: "Amita";
+    font-weight: 700;
+    font-size: 3.5vw;
+    background: linear-gradient(to right, #c67412, #6e4bcc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media (max-width: 600px) {
+    .menu-title-le-chic-a-la-francaise {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .menu-le-chic-a-la-francaise-box-first {
+    color: #c67412;
+  }
+  
+  .menu-le-chic-a-la-francaise-box-second {
+    color: #9e67a5;
+  }
+  
+  .menu-le-chic-a-la-francaise-box-third {
+    color: #6e4bcc;
+  }
+  
+  .menu-box-title-text-le-chic-a-la-francaise-first {
+    font-size: 2.5vw;
+    text-decoration: none;
+    background: linear-gradient(to top, #c67412 0%, #c67412 0.3vw, transparent 0.31vw) no-repeat left bottom/0 100%;
+    transition: background-size 0.5s;
+  }
+  .menu-box-title-text-le-chic-a-la-francaise-first:hover {
+    background-size: 100% 100%;
+  }
+  @media (max-width: 600px) {
+    .menu-box-title-text-le-chic-a-la-francaise-first {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .menu-box-title-text-le-chic-a-la-francaise-second {
+    font-size: 2.5vw;
+    text-decoration: none;
+    background: linear-gradient(to top, #9e67a5 0%, #9e67a5 0.3vw, transparent 0.31vw) no-repeat left bottom/0 100%;
+    transition: background-size 0.5s;
+  }
+  .menu-box-title-text-le-chic-a-la-francaise-second:hover {
+    background-size: 100% 100%;
+  }
+  @media (max-width: 600px) {
+    .menu-box-title-text-le-chic-a-la-francaise-second {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .menu-box-title-text-le-chic-a-la-francaise-third {
+    font-size: 2.5vw;
+    text-decoration: none;
+    background: linear-gradient(to top, #6e4bcc 0%, #6e4bcc 0.3vw, transparent 0.31vw) no-repeat left bottom/0 100%;
+    transition: background-size 0.5s;
+  }
+  .menu-box-title-text-le-chic-a-la-francaise-third:hover {
+    background-size: 100% 100%;
+  }
+  @media (max-width: 600px) {
+    .menu-box-title-text-le-chic-a-la-francaise-third {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .menu-le-delice-des-papilles {
+    background-color: #edefef;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Handlee";
+    font-weight: 900;
+  }
+  
+  .menu-title-le-delice-des-papilles {
+    font-family: "Dancing Script";
+    font-size: 4vw;
+    background: linear-gradient(to right, #0228dd, #229dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media (max-width: 600px) {
+    .menu-title-le-delice-des-papilles {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .menu-box-title-text-le-delice-des-papilles-first {
+    font-size: 2.1vw;
+    text-decoration: none;
+    background: linear-gradient(to top, #0228dd 0%, #0228dd 0.3vw, transparent 0.31vw) no-repeat left bottom/0 100%;
+    transition: background-size 0.5s;
+  }
+  .menu-box-title-text-le-delice-des-papilles-first:hover {
+    background-size: 100% 100%;
+  }
+  @media (max-width: 600px) {
+    .menu-box-title-text-le-delice-des-papilles-first {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .menu-box-title-text-le-delice-des-papilles-second {
+    font-size: 2.1vw;
+    text-decoration: none;
+    background: linear-gradient(to top, #0670f3 0%, #0670f3 0.3vw, transparent 0.31vw) no-repeat left bottom/0 100%;
+    transition: background-size 0.5s;
+  }
+  .menu-box-title-text-le-delice-des-papilles-second:hover {
+    background-size: 100% 100%;
+  }
+  @media (max-width: 600px) {
+    .menu-box-title-text-le-delice-des-papilles-second {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .menu-box-title-text-le-delice-des-papilles-third {
+    font-size: 2.1vw;
+    text-decoration: none;
+    background: linear-gradient(to top, #229dff 0%, #229dff 0.3vw, transparent 0.31vw) no-repeat left bottom/0 100%;
+    transition: background-size 0.5s;
+  }
+  .menu-box-title-text-le-delice-des-papilles-third:hover {
+    background-size: 100% 100%;
+  }
+  @media (max-width: 600px) {
+    .menu-box-title-text-le-delice-des-papilles-third {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .menu-la-palette-du-gout {
+    background-color: #fdfffd;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Caveat";
+  }
+  
+  .menu-title-la-palette-du-gout {
+    font-family: "Kaushan Script";
+    font-size: 6vw;
+    letter-spacing: 0.5vw;
+    background: linear-gradient(to right, #3d923a, #bfff81);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media (max-width: 600px) {
+    .menu-title-la-palette-du-gout {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .menu-box-title-text-la-palette-du-gout {
+    font-size: 2.5vw;
+    text-decoration: none;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 0.3vw, transparent 0.31vw) no-repeat left bottom/0 100%;
+    transition: background-size 0.5s;
+  }
+  .menu-box-title-text-la-palette-du-gout:hover {
+    background-size: 100% 100%;
+  }
+  @media (max-width: 600px) {
+    .menu-box-title-text-la-palette-du-gout {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .legal-notice {
+    margin: 10%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.2);
+  }
+  .legal-notice .legal-notice-title {
+    text-align: center;
+  }
+  .legal-notice .legal-notice-bloc {
+    margin-top: 40px;
+  }
+  
+  /*# sourceMappingURL=style.css.map */
