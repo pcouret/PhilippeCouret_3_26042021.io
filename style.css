@@ -180,7 +180,7 @@
 .footerlogo {
     align-items: center;
     justify-content: flex;
-
+    color:white;
 }
 .footer {
     text-align: center;
@@ -190,11 +190,23 @@
     box-shadow: 10px 5px 5px 5px rgb(226, 215, 215);
 
 }
+.onefooter-icon {
+    color: white;
+}
 
-        
+.one {
+    color: white;
+}    
 
-
-
+.texte {
+    color: white;
+}
+.# {
+    color: white;
+}
+.ul {
+    color: white;
+}
 
 
 @media screen and (max-width: 576px)
