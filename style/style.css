@@ -124,7 +124,7 @@
 
 .function_step {
   margin: auto;
-  padding: 15px 30px;
+  padding: 30px 50px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -134,10 +134,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 1rem 1rem 1rem;
   background-color: #f0eaea;
   border-radius: 20px;
-  padding: 5px 5px;
+  padding: 15px 20px;
   margin-bottom: 20px;
   position: relative;
   -webkit-box-shadow: 10px 5px 5px #e2d7d7;
@@ -529,54 +528,6 @@ header .header__title {
 
 .menu .menu-bottom-empty {
   height: 10vw;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #579c87;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 47px;
-  line-height: 47px;
-}
-
-footer .footer-title {
-  text-decoration: none;
-  color: #fdcb46;
-  font-size: 1.2rem;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-
-footer .footer-title:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  -webkit-animation: shake 0.7s;
-          animation: shake 0.7s;
-  /* When the animation is finished, start again */
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-footer .footer-title-left {
-  margin-left: 15px;
-}
-
-footer .footer-title-right {
-  margin-right: 15px;
-}
-
-.footer-cache {
-  margin-top: 10px;
-  background-color: rgba(0, 0, 0, 0);
-  width: 100%;
-  height: 47px;
 }
 
 .grid-menu {
