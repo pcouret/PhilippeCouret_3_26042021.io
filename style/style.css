@@ -239,7 +239,7 @@
 }
 
 .footer {
-  text-align: center;
+  text-align: left;
   -webkit-box-pack: flex;
       -ms-flex-pack: flex;
           justify-content: flex;
