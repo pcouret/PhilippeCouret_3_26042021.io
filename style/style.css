@@ -304,10 +304,12 @@
 
 .onefooter-icon {
   color: white;
+  list-style-type: none;
 }
 
 .one {
   color: white;
+  list-style-type: none;
 }
 
 .texte {
@@ -318,6 +320,9 @@
   color: white;
 }
 
+.ul {
+  list-style-type: none;
+}
 
 
 
