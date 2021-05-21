@@ -262,26 +262,27 @@
   height: 180px;
   object-fit: cover;
 }
-.card__infos {
+.card__info {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   padding: 10px;
+  color:black;
   
 }
-.card__infos__textes {
+.card__info__textes {
   color: black;
   
 }
-.card__infos__textes--title {
+.card__info__textes--title {
   font-size: 20px;
   
 }
-.card__infos__textes--subtitle {
+.card__info__textes--subtitle {
   font-size: 16px;
   line-height: 1.5;
 }
-.card__infos--hearth {
+.card__info--hearth {
   font-size: 24px;
   margin-right: 10px;
   font-weight: 100;
