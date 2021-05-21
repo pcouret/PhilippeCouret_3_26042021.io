@@ -227,18 +227,8 @@
   color: black;
 }
 
-.footerlogo {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: flex;
-      -ms-flex-pack: flex;
-          justify-content: flex;
-  color: white;
-}
-
 .footer {
-  text-align: center;
+  text-align: left;
   -webkit-box-pack: flex;
       -ms-flex-pack: flex;
           justify-content: flex;
@@ -246,6 +236,16 @@
   color: white;
   -webkit-box-shadow: 10px 5px 5px 5px #e2d7d7;
           box-shadow: 10px 5px 5px 5px #e2d7d7;
+}
+
+.logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: flex;
+      -ms-flex-pack: flex;
+          justify-content: flex;
+  color: white;
 }
 
 .card {
@@ -266,7 +266,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 10px;
   color:black;
   
 }
