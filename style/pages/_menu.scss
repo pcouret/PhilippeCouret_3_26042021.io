@@ -59,11 +59,21 @@
 .title-coeur {
   display: flex;
   flex: 1;
+  justify-content: space-evenly;
+}
+.title {
+  position: relative;
+}
+.heart {
+  position: relative;
+
 }
 .menugeneral {
   background-color: rgb(231, 233, 229);
   padding: 5px;
   border-radius: 25px;
+  margin-top: -25px;
+  position: relative;
 
 }
 
@@ -125,6 +135,7 @@
   font-weight: bold;
   display: inline-block;
   margin: 30px;
+  border: 0px;
 
 }
 #blanc {
@@ -154,23 +165,23 @@
   color: black;
 }
 .headerlogo {
-  text-align: center;
+  text-align: right;
   padding: 1rem 0 0 0;
 }
 .menu__title {
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-right: 0px;
   padding-bottom: 0.5rem;
-  padding-left: 0px;
+  padding-left: 1rem;
   font-size: 1rem;
 }
 
 .menu__titre--underline {
   width: 2.5rem;
   border-top: 3px solid #99e2d0;
-  margin: .5rem 0 0 0;
-  margin-bottom: 10px;
+  margin: 1rem 0 0 0;
 }
 .header {
   display: flex;
+  justify-content: center;
 }
