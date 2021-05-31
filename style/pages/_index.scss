@@ -3,7 +3,7 @@ img {
     width: 100%;
 }
 
-.headerlogo {
+.headerlogopres {
     text-align: center;
     padding: 1rem 0 0 0;
 }
@@ -211,6 +211,93 @@ img {
 .footerlink {
     color: white;
 }
+.card__info {
+    justify-content: space-evenly;
+    color: black;
+}
+.card__new {
+    position:absolute;
+    border-radius: 5px;
+    padding: auto;
+    background-color: aqua;
+    color: rgb(7, 82, 57);
+    font-weight: bold;
+    top: 1rem;
+    right: 1rem;
+}
+.card__info__textes {
+    position: relative;
+    background-color: #fff;
+    border-radius: 0 0 1.5rem 1.5rem;
+    padding-left: 1rem;
+    height: 75px;
+
+
+    
+}
+
+
+.coeur {
+    position:absolute;
+    font-size: 24px;
+    right: 1rem;
+    bottom: 1rem;
+}
+.implat {
+    background-color: white;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px grey;
+    overflow: hidden;
+    cursor: pointer;
+    &__infos {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 1;
+      &--name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      }
+      &--descr {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      }
+    }
+    &__price {
+      padding: 0 10px 10px 10px;
+    }
+    &__checked {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      max-width: 0;
+      overflow: hidden;
+      width: 30%;
+      background-color: green;
+      transition: all 0.5s linear;
+      &--check {
+        color: white;
+        font-size: 30px;
+        transition: all 0.5s linear;
+      }
+    }
+    &:hover {
+      .card__checked {
+        max-width: 50px;
+        &--check {
+          transform: rotateZ(360deg);
+        }
+      }
+    }
+  }
 
 /*
 @media screen and (max-width: 576px)
