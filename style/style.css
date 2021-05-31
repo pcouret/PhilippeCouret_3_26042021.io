@@ -169,7 +169,6 @@ img {
 
 .restaurants_card {
   position: relative;
-  margin-bottom: 20px;
 }
 
 .restaurants_card--img {
@@ -375,15 +374,6 @@ img {
   font-size: 30px;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
-}
-
-.implat:hover .card__checked {
-  max-width: 50px;
-}
-
-.implat:hover .card__checked--check {
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
 }
 
 /*
