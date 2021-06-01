@@ -137,6 +137,7 @@ img {
 }
 
 .function_step {
+  width: 250px;
   margin: auto;
   padding: 30px 50px;
   display: -webkit-inline-box;
@@ -395,6 +396,11 @@ img {
 @media screen and (max-width: 576px)
 @media screen and (max-width: 768px)
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .card {
   background-color: white;
   margin-bottom: 20px;
