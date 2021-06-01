@@ -1,4 +1,9 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 img {
     width: 100%;
 }
@@ -38,6 +43,8 @@ img {
     margin: 0 1.5rem 0 -2rem;
 }
 .btn {
+    background: linear-gradient(#9356DC, #FF79DA);
+    box-shadow: 2px 2px 5px grey;
     grid-column-start: 1;
     box-sizing: border-box;
     -webkit-box-direction: normal;
@@ -209,6 +216,10 @@ img {
 }
 .footerlink {
     color: white;
+}
+.card--img {
+    height: 200px;
+    object-fit: cover;
 }
 .card__info {
     justify-content: space-evenly;

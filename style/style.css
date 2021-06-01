@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   width: 100%;
 }
@@ -48,6 +53,10 @@ img {
 }
 
 .btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
   -ms-grid-column: 1;
       grid-column-start: 1;
   -webkit-box-sizing: border-box;
@@ -270,6 +279,12 @@ img {
 
 .footerlink {
   color: white;
+}
+
+.card--img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card__info {
