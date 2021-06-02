@@ -41,6 +41,15 @@ img {
 }
 .reservation_local--fas {
     margin: 0 1.5rem 0 -2rem;
+    margin-bottom: 0px;
+}
+.reservation_search--title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.reservation_search {
+    margin-bottom: 10px;
 }
 .btn {
     background: linear-gradient(#9356DC, #FF79DA);
@@ -85,8 +94,8 @@ img {
     height: 25px;
     left: -15px;
     position: absolute;
-    text-align: center;
     width: 25px;
+    line-height: 25px;
     
 
         
@@ -134,6 +143,8 @@ img {
     align-items: center;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family: "roboto",sans-serif;
+    font-size: 1.5rem;
 }
 
 .restaurants_card {
@@ -193,11 +204,15 @@ img {
     color:white;
 }
 .footer {
-    text-align: center;
+    text-align: left;
     justify-content: flex;
-    background-color:black;
+    background-color:  #353535;
     color: white;
     box-shadow: 10px 5px 5px 5px rgb(226, 215, 215);
+    font-family: "roboto",sans-serif;
+    display: flex;
+    padding: 0 0 0 1.5rem;
+    
 
 }
 .onefooter-icon {
@@ -229,8 +244,8 @@ img {
 .card__new {
     position:absolute;
     border-radius: 5px;
-    padding: auto;
-    background-color: aqua;
+    padding: 5px;
+    background-color: rgb(93, 233, 203);
     color: rgb(7, 82, 57);
     font-weight: bold;
     top: 1rem;
@@ -242,6 +257,7 @@ img {
     border-radius: 0 0 1.5rem 1.5rem;
     padding-left: 1rem;
     height: 75px;
+    margin-top: 10px;
 
 
     
@@ -253,10 +269,11 @@ img {
     font-size: 24px;
     right: 1rem;
     bottom: 1rem;
+    line-height: 50px;
 }
 .implat {
     background-color: white;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
