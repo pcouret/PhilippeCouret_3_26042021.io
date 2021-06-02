@@ -123,6 +123,7 @@ img {
 .function_step--title {
   text-align: left;
   display: inline-block;
+  color: black;
 }
 
 .fas fa-mobile_alt {
@@ -143,7 +144,8 @@ img {
           align-items: center;
   text-align: center;
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 20px;
+  color: #7e7e7e;
 }
 
 .function_step {
@@ -160,7 +162,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f0eaea;
-  border-radius: 20px;
+  border-radius: 1.5rem;
   padding: 15px 20px;
   margin-bottom: 20px;
   position: relative;
@@ -171,6 +173,10 @@ img {
 .restaurants {
   position: relative;
   margin-bottom: 20px;
+  background: #f6f6f6;
+  display: -ms-grid;
+  display: grid;
+  margin: 10px;
 }
 
 .restaurants--title {
@@ -265,9 +271,6 @@ img {
 
 .footer {
   text-align: left;
-  -webkit-box-pack: flex;
-      -ms-flex-pack: flex;
-          justify-content: flex;
   background-color: #353535;
   color: white;
   -webkit-box-shadow: 10px 5px 5px 5px #e2d7d7;
@@ -276,7 +279,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0 0 1.5rem;
+  padding: 0 0 1.5rem 1.5rem;
+  font-size: 12px;
 }
 
 .onefooter-icon {
@@ -296,7 +300,9 @@ img {
 }
 
 .footerlink {
+  margin: 0 0 10px 0;
   color: white;
+  text-decoration: none;
 }
 
 .card--img {
@@ -352,7 +358,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-radius: 15px;
+  border-radius: 25px;
   -webkit-box-shadow: 3px 3px 5px grey;
           box-shadow: 3px 3px 5px grey;
   overflow: hidden;
@@ -550,7 +556,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: black;
+  background-color: #353535;
   color: white;
   -webkit-box-shadow: 10px 5px 5px 5px #e2d7d7;
           box-shadow: 10px 5px 5px 5px #e2d7d7;

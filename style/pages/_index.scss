@@ -103,6 +103,7 @@ img {
 .function_step--title {
     text-align: left;
     display: inline-block;
+    color: black;
 }
 .fas fa-mobile_alt {
     align-items: center;
@@ -114,7 +115,8 @@ img {
     align-items:center;
     text-align: center;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px;
+    color: #7e7e7e;
 }
 
 .function_step {
@@ -125,7 +127,7 @@ img {
     justify-content: center;
     align-items: center;
     background-color:#f0eaea;
-    border-radius: 20px;
+    border-radius: 1.5rem;
     padding: 15px 20px;
     margin-bottom: 20px;
     position: relative;
@@ -135,6 +137,9 @@ img {
 .restaurants {
     position: relative;
     margin-bottom: 20px;
+    background: #f6f6f6;
+    display: grid;
+    margin: 10px;
 }
 
 .restaurants--title {
@@ -205,13 +210,13 @@ img {
 }
 .footer {
     text-align: left;
-    justify-content: flex;
     background-color:  #353535;
     color: white;
     box-shadow: 10px 5px 5px 5px rgb(226, 215, 215);
     font-family: "roboto",sans-serif;
     display: flex;
-    padding: 0 0 0 1.5rem;
+    padding: 0 0 1.5rem 1.5rem;
+    font-size: 12px;
     
 
 }
@@ -231,7 +236,10 @@ img {
     color: white;
 }
 .footerlink {
+    margin: 0 0 10px 0;
     color: white;
+    text-decoration: none;
+    
 }
 .card--img {
     height: 200px;
@@ -277,7 +285,7 @@ img {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 3px 3px 5px grey;
     overflow: hidden;
     cursor: pointer;
