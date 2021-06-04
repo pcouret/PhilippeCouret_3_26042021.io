@@ -368,9 +368,10 @@ img {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
-  text-fill-color: transparent;
+  -webkit-text-emphasis-color: transparent;
+          text-emphasis-color: transparent;
   -webkit-text-fill-color: transparent;
-  text-stroke-color: transparent;
+  text-emphasis-color: transparent;
   -webkit-text-stroke-color: transparent;
 }
 
@@ -729,9 +730,10 @@ img {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
-  text-fill-color: transparent;
+  -webkit-text-emphasis-color: transparent;
+          text-emphasis-color: transparent;
   -webkit-text-fill-color: transparent;
-  text-stroke-color: transparent;
+  text-emphasis-color: transparent;
   -webkit-text-stroke-color: transparent;
 }
 
