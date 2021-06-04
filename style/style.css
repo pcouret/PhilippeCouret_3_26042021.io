@@ -315,7 +315,6 @@ img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  color: black;
 }
 
 .card__new {
@@ -336,14 +335,51 @@ img {
   padding-left: 1rem;
   height: 75px;
   margin-top: 10px;
+  color: black;
 }
 
-.coeur {
+.love {
+  position: relative;
+  right: -0.5rem;
+  bottom: 5rem;
+  width: 600px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.love--hearth {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 24px;
-  right: 1rem;
-  bottom: 1rem;
-  line-height: 50px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.love--hearth.empty {
+  opacity: 1;
+}
+
+.love--hearth.full {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-stroke-color: transparent;
+  -webkit-text-stroke-color: transparent;
+}
+
+.love:hover .love--hearth.empty {
+  opacity: 0;
+}
+
+.love:hover .love--hearth.full {
+  opacity: 1;
 }
 
 .implat {
