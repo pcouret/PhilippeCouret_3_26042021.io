@@ -7,7 +7,6 @@
   background-color: white;
   margin-bottom: 20px;
   margin: 10px;
-  padding: 5px;
   width: 320px;
   display: flex;
   align-items: flex-end;
@@ -17,6 +16,7 @@
   overflow: hidden;
   cursor: pointer;
   &__infos {
+    margin: 10px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: 70px;
     max-width: 0;
     overflow: hidden;
     width: 30%;
@@ -61,17 +61,25 @@
     }
   }
 }
+.menutitle{
+  text-transform: uppercase;
+  font-weight: blod;
+  font-size: 18px;
+  &--underline {
+    border-bottom: 3px solid #99e2d0
+  }
+}
 .title-peace {
-  flex: 1;
-  justify-content: space-evenly;
+  display:flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 10px;
 }
 .title {
   position: relative;
 }
 .peace {
-  position:absolute;
-    width: 666px;
-    height: 0rem;
+  position:relative;
     cursor: pointer;
     &--hearth {
         position: absolute;
@@ -215,19 +223,16 @@
   text-align: right;
   padding: 1rem 0 0 0;
 }
-.menu__title {
-  padding-top: 1rem;
-  padding-right: 0px;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  font-size: 1rem;
+.menutitre {
+  padding: 10px;
+    text-transform: uppercase;
+    font-weight: blod;
+    font-size: 18px;
+    &--underline {
+      border-bottom: 4px solid #99e2d0
+    }
 }
 
-.menu__titre--underline {
-  width: 2.5rem;
-  border-top: 3px solid #99e2d0;
-  margin: 1rem 0 0 0;
-}
 .header {
   display: flex;
   justify-content: center;
