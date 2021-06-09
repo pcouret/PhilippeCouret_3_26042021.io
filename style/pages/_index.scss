@@ -28,11 +28,8 @@ img {
     
 }
 .reservation_local {
-    width: 100%;
-    display: inline-flex;
-    -webkit-box-pack: center;
+    display: flex;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
     padding: 15px 10px;
     background-color: #eaeaea;
@@ -272,8 +269,8 @@ img {
 
 .love {
     position:absolute;
-    width: 600px;
-    height: 8%;
+    right: 40px;
+    bottom: 50px;
     cursor: pointer;
     &--hearth {
         position: absolute;
@@ -313,6 +310,7 @@ img {
         }
 }
 .implat {
+    position: relative;
     background-color: white;
     margin-bottom: 40px;
     display: flex;

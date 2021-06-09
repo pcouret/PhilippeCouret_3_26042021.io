@@ -32,16 +32,15 @@ img {
 }
 
 .reservation_local {
-  width: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-      align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px 10px;
   background-color: #eaeaea;
   -webkit-box-shadow: 0px 3px 3px #73737338 inset;
@@ -340,8 +339,8 @@ img {
 
 .love {
   position: absolute;
-  width: 600px;
-  height: 8%;
+  right: 40px;
+  bottom: 50px;
   cursor: pointer;
 }
 
@@ -382,6 +381,7 @@ img {
 }
 
 .implat {
+  position: relative;
   background-color: white;
   margin-bottom: 40px;
   display: -webkit-box;
