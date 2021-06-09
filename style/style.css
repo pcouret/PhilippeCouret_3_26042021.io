@@ -339,11 +339,9 @@ img {
 }
 
 .love {
-  position: relative;
-  right: -0.5rem;
-  bottom: 5rem;
+  position: absolute;
   width: 600px;
-  margin: 20px;
+  height: 8%;
   cursor: pointer;
 }
 
@@ -452,6 +450,73 @@ img {
   font-size: 30px;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: 0.5s 2.5s linear hideLoader both;
+          animation: 0.5s 2.5s linear hideLoader both;
+}
+
+.loader--spinner {
+  font-size: 90px;
+  background: -webkit-gradient(linear, left top, left bottom, from(purple), to(pink));
+  background: linear-gradient(purple, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: transparent;
+  -webkit-animation: 2s linear infinite spinner;
+          animation: 2s linear infinite spinner;
+}
+
+@-webkit-keyframes spinner {
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spinner {
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes hideLoader {
+  50% {
+    visibility: hidden;
+    z-index: 10;
+  }
+  100% {
+    visibility: hidden;
+    z-index: -10;
+  }
+}
+
+@keyframes hideLoader {
+  50% {
+    visibility: hidden;
+    z-index: 10;
+  }
+  100% {
+    visibility: hidden;
+    z-index: -10;
+  }
 }
 
 /*
@@ -637,6 +702,14 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #ec51d8;
   color: white;
   padding: 15px 30px;

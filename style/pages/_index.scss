@@ -1,5 +1,5 @@
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -271,11 +271,9 @@ img {
 }
 
 .love {
-    position:relative;
-    right: -0.5rem;
-    bottom: 5rem;
+    position:absolute;
     width: 600px;
-    margin: 20px;
+    height: 8%;
     cursor: pointer;
     &--hearth {
         position: absolute;
@@ -361,6 +359,45 @@ img {
       }
     }
   }
+
+  .loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: 0.5s 2.5s linear hideLoader both;
+    &--spinner{
+      font-size: 90px;
+      background: linear-gradient(purple, pink);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-color: transparent;
+      animation: 2s linear infinite spinner;
+    }
+  }
+  
+  @keyframes spinner{
+    to {
+      transform: rotateZ(360deg)
+    }
+  }
+  
+  @keyframes hideLoader{
+    50% {
+      visibility: hidden;
+      z-index: 10;
+    }
+    100% {
+      visibility: hidden;
+      z-index: -10;
+    }
+  }
+  
 
 /*
 @media screen and (max-width: 576px)

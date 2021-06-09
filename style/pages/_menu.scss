@@ -133,6 +133,10 @@
   border-radius: 25px;
   flex-direction: column;
   text-align: center;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: 2px 2px 5px grey;
+  grid-column-start: 1;
+  box-sizing: border-box;
   background-color: #ec51d8;
   color: white;
   padding: 15px 30px;
