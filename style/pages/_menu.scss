@@ -61,16 +61,54 @@
     }
   }
 }
-.title-coeur {
-  display: flex;
+.title-peace {
   flex: 1;
   justify-content: space-evenly;
 }
 .title {
   position: relative;
 }
-.heart {
-  position: relative;
+.peace {
+  position:absolute;
+    width: 666px;
+    height: 0rem;
+    cursor: pointer;
+    &--hearth {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        transition: all 1s linear;
+          
+        &.empty {
+            opacity: 1;
+        }
+          
+        &.full {
+            opacity: 0;
+            background: linear-gradient(#9356DC, #FF79DA);
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-emphasis-color: transparent;
+            -webkit-text-fill-color: transparent;
+            text-emphasis-color: transparent;
+            -webkit-text-stroke-color: transparent;
+        }
+          
+    }
+          
+        &:hover {
+            .peace--hearth{
+                &.empty {
+            opacity: 0;
+        }
+          
+        &.full {
+            opacity: 1;
+        }
+          }
+        }
 
 }
 .menugeneral {
@@ -194,45 +232,4 @@
   display: flex;
   justify-content: center;
 }
-.hearthsContainer{
-  position: relative;
-  width: 20px;
-  margin: 20px;
-  cursor: pointer;
-  &--hearth{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    transition: all 1s linear;
-    
-    &.empty {
-      opacity: 1;
-    }
-    
-    &.full {
-      opacity: 0;
-      background: linear-gradient(#9356DC, #FF79DA);
-      -webkit-background-clip: text;
-      background-clip: text;
-      text-emphasis-color: transparent;
-      -webkit-text-fill-color: transparent;
-      text-emphasis-color: transparent;
-      -webkit-text-stroke-color: transparent;
-    }
-    
-  }
-    
-    &:hover {
-      .hearthsContainer--hearth{
-        &.empty {
-      opacity: 0;
-    }
-    
-    &.full {
-      opacity: 1;
-    }
-      }
-    }
-}
+
