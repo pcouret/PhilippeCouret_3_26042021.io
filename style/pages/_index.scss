@@ -64,6 +64,10 @@ img {
     display: inline-block;
     margin: 30px;
     border: 0px;
+    transition-duration: .25s;
+    &:hover {
+        filter: brightness(40%);
+    }
 }
 
 .function {
