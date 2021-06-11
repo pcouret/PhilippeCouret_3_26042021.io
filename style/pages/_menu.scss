@@ -191,7 +191,8 @@
     margin: 30px;
     border: 0px;
     &:hover {
-      filter: brightness(40%);
+      filter: brightness(160%);
+      box-shadow: 20px 20px 2px grey;
   }
 }
 #blanc {

@@ -66,7 +66,8 @@ img {
     border: 0px;
     transition-duration: .25s;
     &:hover {
-        filter: brightness(40%);
+        filter: brightness(160%);
+      box-shadow: 20px 20px 2px grey;
     }
 }
 
