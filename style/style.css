@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   width: 100%;
 }
@@ -477,6 +481,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 100;
   -webkit-animation: 0.5s 2.5s linear hideLoader both;
           animation: 0.5s 2.5s linear hideLoader both;
 }
@@ -509,7 +514,7 @@ img {
 @-webkit-keyframes hideLoader {
   50% {
     visibility: hidden;
-    z-index: 10;
+    z-index: 100;
   }
   100% {
     visibility: hidden;
@@ -520,7 +525,7 @@ img {
 @keyframes hideLoader {
   50% {
     visibility: hidden;
-    z-index: 10;
+    z-index: 100;
   }
   100% {
     visibility: hidden;
@@ -555,6 +560,8 @@ img {
           box-shadow: 3px 3px 5px grey;
   overflow: hidden;
   cursor: pointer;
+  -webkit-animation: enter 1s linear both;
+          animation: enter 1s linear both;
 }
 
 .card__infos {
@@ -829,5 +836,41 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@-webkit-keyframes enter {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes enter {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

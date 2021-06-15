@@ -14,6 +14,7 @@
   box-shadow: 3px 3px 5px grey;
   overflow: hidden;
   cursor: pointer;
+  animation: enter 1s linear both;
   &__infos {
     margin: 10px;
     white-space: nowrap;
@@ -238,5 +239,20 @@
 .header {
   display: flex;
   justify-content: center;
+}
+
+@keyframes enter{
+  0%{
+    transform: translateY(30px);
+    opacity: 0
+  }
+  50%{
+    transform: translateY(15px);
+    opacity: 1
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1
+  }
 }
 

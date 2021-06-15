@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     width: 100%;
 }
@@ -373,6 +377,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
     animation: 0.5s 2.5s linear hideLoader both;
     &--spinner{
       font-size: 90px;
@@ -393,7 +398,7 @@ img {
   @keyframes hideLoader{
     50% {
       visibility: hidden;
-      z-index: 10;
+      z-index: 100;
     }
     100% {
       visibility: hidden;
@@ -401,7 +406,9 @@ img {
     }
   }
   
+@media screen and (min-width:1024px){
 
+}
 /*
 @media screen and (max-width: 576px)
 @media screen and (max-width: 768px)
