@@ -164,9 +164,6 @@ img {
   width: 250px;
   margin: auto;
   padding: 30px 50px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
